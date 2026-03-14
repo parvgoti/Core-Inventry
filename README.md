@@ -29,60 +29,72 @@ Client (Frontend) – Handles the user interface and user interaction.
 
 Server (Backend) – Handles the database, APIs, and application logic.
 
-Repository File Structure
+## 📁 Repository File Structure
 
-  Client (Frontend) Structure
+Due to GitHub's file upload size limitation (25MB), the project is uploaded as two compressed files:
 
-  client
-│
-├── public
-│   └── Static files and assets
-│
-├── src
-│   │
-│   ├── components
-│   │   └── Reusable UI components
-│   │
-│   ├── pages
-│   │   └── Different application pages
-│   │
-│   ├── services
-│   │   └── API communication functions
-│   │
-│   ├── styles
-│   │   └── CSS or styling files
-│   │
-│   ├── App.js
-│   │   └── Main application component
-│   │
-│   └── main.js / index.js
-│       └── Application entry point
-│
-├── package.json
-│   └── Project dependencies and scripts
-│
-└── vite.config.js / config files
+- **client.zip** → Contains the frontend source code  
+- **server.zip** → Contains the backend source code  
 
-Server (Backend) Structure
-server
+After extracting both files, the project structure will look like this:
+
+```
+IMS-Project
 │
-├── routes
-│   └── API route definitions
+├── client
+│   │
+│   ├── public
+│   │   └── Static files and assets
+│   │
+│   ├── src
+│   │   │
+│   │   ├── components
+│   │   │   └── Reusable UI components
+│   │   │
+│   │   ├── pages
+│   │   │   └── Different application pages
+│   │   │
+│   │   ├── services
+│   │   │   └── API communication functions
+│   │   │
+│   │   ├── styles
+│   │   │   └── CSS and styling files
+│   │   │
+│   │   ├── App.js
+│   │   │   └── Main application component
+│   │   │
+│   │   └── main.js / index.js
+│   │       └── Application entry point
+│   │
+│   ├── package.json
+│   │   └── Project dependencies and scripts
+│   │
+│   └── vite.config.js
+│       └── Vite configuration file
 │
-├── controllers
-│   └── Business logic for handling requests
+├── server
+│   │
+│   ├── routes
+│   │   └── API route definitions
+│   │
+│   ├── controllers
+│   │   └── Business logic for handling requests
+│   │
+│   ├── models
+│   │   └── Database schemas or data models
+│   │
+│   ├── config
+│   │   └── Database and environment configuration
+│   │
+│   ├── middleware
+│   │   └── Request handling middleware
+│   │
+│   ├── server.js / app.js
+│   │   └── Main backend server file
+│   │
+│   └── package.json
+│       └── Backend dependencies
 │
-├── models
-│   └── Database schemas or data models
-│
-├── config
-│   └── Database and environment configuration
-│
-├── middleware
-│   └── Request handling middleware
-│
-├── server.js / app.js
-│   └── Main backend server file
-│
-└── package.json
-    └── Backend dependencies
+└── README.md
+    └── Project documentation
+```
